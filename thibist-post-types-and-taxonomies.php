@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Thisbit Event Post Types
+ * Plugin Name:       Thisbit Post Types and Taxonomies.
  * Plugin URI:        http://github.com/thisbit/thisbit-event-post-types/
  * Description:       A simple plugin for creating custom post types and taxonomies.
  * Version:           1.0.0
