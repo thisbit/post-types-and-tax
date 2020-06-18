@@ -27,3 +27,22 @@ function thisbit_register_event_type() {
 
     register_post_type( 'event', $args );
 }
+
+
+function thisdash_reorder_admin_menu( $__return_true ) {
+    return array(
+         'index.php',
+         'edit.php',
+				 'edit.php?post_type=event',
+				 'edit.php?post_type=page',
+				 'separator1',
+				 'upload.php',
+         'themes.php',
+         'edit-comments.php',
+         'users.php',
+         'plugins.php',
+         'tools.php',
+         'options-general.php',
+   );
+}
+add_filter( 'custom_menu_order', 'thisdash_reorder_admin_menu' );
