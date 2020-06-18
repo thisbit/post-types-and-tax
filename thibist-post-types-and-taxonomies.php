@@ -21,6 +21,7 @@
 define( 'THISBIT_VERSION', '1.0.0' );
 define( 'THISBITDOMAIN', 'thibit-post-types' );
 define( 'THISBITPATH', plugin_dir_path( __FILE__ ) );
+define( 'THISBITURL', plugin_dir_url( __FILE__ ) );
 
 require_once( THISBITPATH . '/post-types/register.php' );
 add_action( 'init', 'thisbit_register_event_type' );
@@ -31,3 +32,10 @@ require_once( THISBITPATH . '/taxonomies/register.php' );
 add_action( 'init', 'thisbit_register_post_taxonomies' );
 add_action( 'init', 'thisbit_register_event_types' );
 add_action( 'init', 'thisbit_register_event_organizers' );
+
+
+require_once( THISBITPATH . '/assets/register.php' );
+add_action( 'init', 'thisdash_gutenberg_register_files' ); // Control what appears in guttenberg sidebar with js.
+add_action( 'init', 'thisdash_gutenberg_disable_all_colors' );
+add_action( 'init', 'thisdash_gutenberg_disable_font_picker' );
+add_action('init', 'thisdash_remove_custom_colors');
