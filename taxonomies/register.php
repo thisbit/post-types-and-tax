@@ -34,8 +34,7 @@ function thisbit_register_post_taxonomies() {
 		"show_in_quick_edit" => true,
   );
 
-  $post_types = array( 'post' );
-
+  $post_types = array( 'post', 'page' );
   register_taxonomy( 'thisbit_post_taxonomies', $post_types, $args );
 }
 
@@ -63,7 +62,7 @@ function thisbit_register_event_types() {
       'delete_terms'      => 'edit_posts',
       'assign_terms'      => 'edit_posts'
       ),
-    'rewrite'            => ['slug' => 'types'],
+    'rewrite'            => ['slug' => 'event-types'],
 		"show_in_quick_edit" => true,
   );
 
@@ -96,7 +95,7 @@ function thisbit_register_event_organizers() {
       'delete_terms'      => 'edit_posts',
       'assign_terms'      => 'edit_posts'
       ),
-    'rewrite'            => ['slug' => 'organizers'],
+    'rewrite'            => ['slug' => 'event-organizers'],
 		"show_in_quick_edit" => true,
   );
 

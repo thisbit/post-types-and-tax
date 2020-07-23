@@ -38,4 +38,7 @@ require_once( THISBITPATH . '/assets/register.php' );
 add_action( 'init', 'thisdash_gutenberg_register_files' ); // Control what appears in guttenberg sidebar with js.
 add_action( 'init', 'thisdash_gutenberg_disable_all_colors' );
 add_action( 'init', 'thisdash_gutenberg_disable_font_picker' );
-add_action('init', 'thisdash_remove_custom_colors');
+add_action( 'init', 'thisdash_remove_custom_colors' );
+
+// Add excerpt pannel to pages.
+add_post_type_support( 'page', 'excerpt' );

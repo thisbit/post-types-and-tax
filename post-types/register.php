@@ -21,8 +21,9 @@ function thisbit_register_event_type() {
         'has_archive' => 'events',
         'rewrite' => array( 'has_front' => true ),
         'menu_icon' => 'dashicons-calendar',
-        'supports' => array( 'title', 'editor', 'thumbnail' ),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
         'show_in_rest' => true,
+				'show_in_nav_menus' => false,
     );
 
     register_post_type( 'event', $args );
