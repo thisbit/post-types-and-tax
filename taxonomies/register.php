@@ -34,7 +34,7 @@ function thisbit_register_post_taxonomies() {
 		"show_in_quick_edit" => true,
   );
 
-  $post_types = array( 'post', 'page' );
+  $post_types = array( 'post' );
   register_taxonomy( 'thisbit_post_taxonomies', $post_types, $args );
 }
 
@@ -68,6 +68,38 @@ function thisbit_register_event_taxonomies() {
 
   $post_types = array( 'event' );
   register_taxonomy( 'thisbit_event_taxonomies', $post_types, $args );
+}
+
+function thisbit_register_page_taxonomies() {
+  $labels = array(
+    'name'          => __( 'Page Taxonomies', THISBITDOMAIN ),
+    'singular_name' => __( 'Page Taxonomy', THISBITDOMAIN ),
+    'add_new_item'  => __( 'Add Page Taxonomy', THISBITDOMAIN ),
+    'search_items'  => __('Search Page Taxonomies', THISBITDOMAIN ),
+    'not_found'     => __('No Page Taxomies Found', THISBITDOMAIN ),
+    // List of all labels: https://developer.wordpress.org/reference/functions/get_taxonomy_labels/.
+  );
+
+  $args = array(
+    'labels'             => $labels,
+    'public'             => true,
+    'show_admin_column'  => true,
+    'show_in_quick_edit' => true,
+    'show_in_rest'       => true,
+    'hierarchical'       =>  true,
+    'show_in_nav_menus'  => false,
+    'capabilities'       => array(
+      'manage_terms'      => 'manage_options',
+      'edit_terms'        => 'manage_options',
+      'delete_terms'      => 'manage_options',
+      'assign_terms'      => 'edit_posts'
+      ),
+    'rewrite'            => ['slug' => 'terms'],
+		"show_in_quick_edit" => true,
+  );
+
+  $post_types = array( 'page' );
+  register_taxonomy( 'thisbit_page_taxonomies', $post_types, $args );
 }
 
 function thisbit_register_event_types() {
