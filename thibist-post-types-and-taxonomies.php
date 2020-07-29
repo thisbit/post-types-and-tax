@@ -30,6 +30,7 @@ add_filter( 'menu_order', 'thisdash_reorder_admin_menu' ); // reorder menu.
 
 require_once( THISBITPATH . '/taxonomies/register.php' );
 add_action( 'init', 'thisbit_register_post_taxonomies' );
+add_action( 'init', 'thisbit_register_event_taxonomies' );
 add_action( 'init', 'thisbit_register_event_types' );
 add_action( 'init', 'thisbit_register_event_organizers' );
 
