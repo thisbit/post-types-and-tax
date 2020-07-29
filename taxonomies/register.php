@@ -8,11 +8,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function thisbit_register_post_taxonomies() {
   $labels = array(
-    'name'          => __( 'Post Taxonomies', THISBITDOMAIN ),
-    'singular_name' => __( 'Post Taxonomy', THISBITDOMAIN ),
-    'add_new_item'  => __( 'Add Post Taxonomy', THISBITDOMAIN ),
-    'search_items'  => __('Search Post Taxonomies', THISBITDOMAIN ),
-    'not_found'     => __('No Post Taxomies Found', THISBITDOMAIN ),
+    'name'          => __( 'Post Controls', THISBITDOMAIN ),
+    'singular_name' => __( 'Post Controls', THISBITDOMAIN ),
+    'add_new_item'  => __( 'Add Post Controls', THISBITDOMAIN ),
+    'search_items'  => __('Search Post Controls', THISBITDOMAIN ),
+    'not_found'     => __('No Post Controls Found', THISBITDOMAIN ),
     // List of all labels: https://developer.wordpress.org/reference/functions/get_taxonomy_labels/.
   );
 
@@ -40,11 +40,11 @@ function thisbit_register_post_taxonomies() {
 
 function thisbit_register_event_taxonomies() {
   $labels = array(
-    'name'          => __( 'Event Taxonomies', THISBITDOMAIN ),
-    'singular_name' => __( 'Event Taxonomy', THISBITDOMAIN ),
-    'add_new_item'  => __( 'Add Event Taxonomy', THISBITDOMAIN ),
-    'search_items'  => __('Search Event Taxonomies', THISBITDOMAIN ),
-    'not_found'     => __('No Event Taxomies Found', THISBITDOMAIN ),
+    'name'          => __( 'Event Controls', THISBITDOMAIN ),
+    'singular_name' => __( 'Event Controls', THISBITDOMAIN ),
+    'add_new_item'  => __( 'Add Event Controls', THISBITDOMAIN ),
+    'search_items'  => __('Search Event Controls', THISBITDOMAIN ),
+    'not_found'     => __('No Event Controls Found', THISBITDOMAIN ),
     // List of all labels: https://developer.wordpress.org/reference/functions/get_taxonomy_labels/.
   );
 
@@ -72,11 +72,11 @@ function thisbit_register_event_taxonomies() {
 
 function thisbit_register_page_taxonomies() {
   $labels = array(
-    'name'          => __( 'Page Taxonomies', THISBITDOMAIN ),
-    'singular_name' => __( 'Page Taxonomy', THISBITDOMAIN ),
-    'add_new_item'  => __( 'Add Page Taxonomy', THISBITDOMAIN ),
-    'search_items'  => __('Search Page Taxonomies', THISBITDOMAIN ),
-    'not_found'     => __('No Page Taxomies Found', THISBITDOMAIN ),
+    'name'          => __( 'Page Controls', THISBITDOMAIN ),
+    'singular_name' => __( 'Page Controls', THISBITDOMAIN ),
+    'add_new_item'  => __( 'Add Page Controls', THISBITDOMAIN ),
+    'search_items'  => __('Search Page Controls', THISBITDOMAIN ),
+    'not_found'     => __('No Page Controls Found', THISBITDOMAIN ),
     // List of all labels: https://developer.wordpress.org/reference/functions/get_taxonomy_labels/.
   );
 
